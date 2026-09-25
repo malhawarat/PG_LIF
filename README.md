@@ -13,8 +13,8 @@ all-or-none dendritic plateau state `p` is repurposed for two roles at once:
    by behavioral timescale synaptic plasticity (BTSP).
 
 The repository contains the notebooks used to run every experiment reported in
-the paper, the exact figures included in the manuscript, and the LaTeX source
-of the manuscript itself.
+the paper and the exact figures included in the manuscript. The manuscript
+source itself is not part of this repository.
 
 ## Repository structure
 
@@ -23,7 +23,6 @@ notebooks/               Experiment notebooks (model + training/eval code), one 
 notebooks/executed_runs/ Notebooks re-executed with outputs retained, used as evidence
                           for specific reported numbers/figures (see table below)
 figures/                 Final manuscript figures (fig1-fig13), 300 DPI
-manuscript/              LaTeX source (elsarticle class), bibliography, style files
 ```
 
 ## Notebook -> experiment / manuscript section map
@@ -76,4 +75,4 @@ added upon publication).
 
 ## License
 
-TBD by the author prior to public release.
+MIT License — see `LICENSE`.
