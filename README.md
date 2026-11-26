@@ -1,4 +1,6 @@
-# PG-LIF: A Plateau-Gated Two-Compartment Spiking Neuron for Multi-Timescale Gradient Propagation and Local, Hardware-Compatible Learning
+# PG-LIF: A Plateau-Gated Two-Compartment Spiking Neuron
+
+Gradient-Propagation Analysis and One-Shot Plasticity Gating
 
 Code, notebooks, and figures accompanying the manuscript submitted to *Neurocomputing* (Elsevier).
 
@@ -22,8 +24,12 @@ source itself is not part of this repository.
 notebooks/               Experiment notebooks (model + training/eval code), one per experiment
 notebooks/executed_runs/ Notebooks re-executed with outputs retained, used as evidence
                           for specific reported numbers/figures (see table below)
-figures/                 Final manuscript figures (fig1-fig13), 300 DPI
+results/                 Per-run result files for the revision experiments
+figures/                 Final manuscript figures, 300 DPI
 ```
+
+Files added during the first revision carry an `_R1` suffix; `REVISION_R1.md`
+lists them and what each one produces.
 
 ## Notebook -> experiment / manuscript section map
 
@@ -39,6 +45,10 @@ figures/                 Final manuscript figures (fig1-fig13), 300 DPI
 | `PG_LIF_P3a_one_shot_memorization.ipynb` | Sec. 7.4, Fig. 8, Fig. 12 | One-shot memorization (BTSP-style memory layer), gated vs. ungated control, and faithful reproduction of the Wu & Maass (2025) baseline |
 | `PG_LIF_P3b_gated_eprop.ipynb` | Sec. 7, Table 2, Fig. 2 | Regime B: online e-prop with plateau-gated vs. permuted-gated vs. ungated three-factor rule |
 | `PG_LIF_P4_sensitivity.ipynb` | Sec. 8, Fig. 10 | Hyperparameter sensitivity analysis |
+| `PG_LIF_P1_paper_mode_R1.ipynb` | Sec. 7.1, 7.4, Tables 4-5 | Mechanism factorial, initialization control, alternative stabilization strategies, five-seed plateau-parameter runs, complete per-seed discard table |
+| `PG_LIF_P3b_gated_eprop_R1.ipynb` | Sec. 7.3, Table 2 | Regime B with two neuron-local gate normalizations, full-test-set accuracy, gate statistics |
+| `PG_LIF_P3a_confirmatory_matched_controls_R1.ipynb` | Sec. 7.5, Table 6, Fig. 11 | Confirmatory one-shot experiment, 50 seeds, controls matched in gated-neuron count, learning rate and per-neuron updates |
+| `PG_LIF_P3a_one_shot_memorization_R1_eq12_sensitivity.ipynb` | Sec. 7.5 | One-shot sensitivity run under the alternative gate normalization |
 
 `notebooks/executed_runs/` holds re-executed copies (with cell outputs retained)
 of the notebooks used to extract the exact numbers/figures reported for the
@@ -48,8 +58,9 @@ provenance for those specific results.
 
 ## Figures
 
-`figures/` contains the 13 figures used in the manuscript at 300 DPI, named
-`fig1_...png` through `fig13_...png` matching their in-text labels.
+`figures/` contains the manuscript figures at 300 DPI, named to match their
+in-text labels, together with the model-overview figure (`fig0_overview.png`)
+and the figures added in the revision.
 
 ## Reproducing results
 

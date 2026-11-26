@@ -1,0 +1,38 @@
+{
+  "plateau-graded": {
+    "mean_active": 175.772775,
+    "mean_gate_sum": 167.479791481781,
+    "per_neuron_cv": 0.0953302725404501,
+    "max_per_neuron_abs_diff": 0.0
+  },
+  "mismatched-pattern": {
+    "mean_active": 175.772775,
+    "mean_gate_sum": 167.479791481781,
+    "per_neuron_cv": 0.0953302726149559,
+    "max_per_neuron_abs_diff": 0.0001220703125
+  },
+  "permuted-graded": {
+    "mean_active": 175.772775,
+    "mean_gate_sum": 167.47979148635866,
+    "per_neuron_cv": 0.05035111616365612,
+    "max_per_neuron_abs_diff": 90.6750717163086
+  },
+  "random-binary-lrmatched": {
+    "mean_active": 175.772775,
+    "mean_gate_sum": 167.47979128112792,
+    "per_neuron_cv": 0.04947606831789017,
+    "max_per_neuron_abs_diff": 80.55020904541016
+  },
+  "random-binary": {
+    "mean_active": 175.772775,
+    "mean_gate_sum": 175.772775,
+    "per_neuron_cv": 0.04959805254824459,
+    "max_per_neuron_abs_diff": 96.6837387084961
+  },
+  "ungated": {
+    "mean_active": 200.0,
+    "mean_gate_sum": 200.0,
+    "per_neuron_cv": 0.0,
+    "max_per_neuron_abs_diff": 116.6837387084961
+  }
+}
