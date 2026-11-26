@@ -49,6 +49,7 @@ lists them and what each one produces.
 | `PG_LIF_P3b_gated_eprop_R1.ipynb` | Sec. 7.3, Table 2 | Regime B with two neuron-local gate normalizations, full-test-set accuracy, gate statistics |
 | `PG_LIF_P3a_confirmatory_matched_controls_R1.ipynb` | Sec. 7.5, Table 6, Fig. 11 | Confirmatory one-shot experiment, 50 seeds, controls matched in gated-neuron count, learning rate and per-neuron updates |
 | `PG_LIF_P3a_one_shot_memorization_R1_eq12_sensitivity.ipynb` | Sec. 7.5 | One-shot sensitivity run under the alternative gate normalization |
+| `PG_LIF_fig_overview.ipynb` | Fig. 1 | Method overview schematic |
 
 `notebooks/executed_runs/` holds re-executed copies (with cell outputs retained)
 of the notebooks used to extract the exact numbers/figures reported for the
